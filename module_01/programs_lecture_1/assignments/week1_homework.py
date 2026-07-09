@@ -21,6 +21,7 @@ for poweroftwo in range(4, 13):
     n_trials_list.append(n_trials)
 
 pylab.plot(n_trials_list, sigmasqs, 'o')
+pylab.plot([10.0, 10000.0], [1.642 / math.sqrt(10.0), 1.642 / math.sqrt(10000.0)])
 pylab.xscale('log')
 pylab.yscale('log')
 pylab.xlabel('number of trials')
